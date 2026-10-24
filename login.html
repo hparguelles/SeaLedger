@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Sign in | SeaLedger
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="images/favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="login-page" data-page="login">
+  <main class="login-card">
+   <img alt="SeaLedger logo" class="login-logo-img" src="images/logo.png"/>
+   <h1 class="visually-hidden">
+    SeaLedger
+   </h1>
+   <p>
+    Fish Inventory &amp; Sales Monitoring
+   </p>
+   <form id="loginForm">
+    <label class="form-label" for="username">
+     Username
+    </label>
+    <input class="form-control mb-3" id="username" required="" value="vendor"/>
+    <label class="form-label" for="password">
+     Password
+    </label>
+    <input class="form-control mb-3" id="password" required="" type="password" value="SeaLedger123!"/>
+    <div class="text-danger small mb-3" id="loginError">
+    </div>
+    <button class="btn btn-primary-teal w-100" type="submit">
+     Sign in
+    </button>
+   </form>
+  </main>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
