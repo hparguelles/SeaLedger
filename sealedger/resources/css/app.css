@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --color-brand: #087f8c;
+    --color-brand-dark: #013b40;
+    --color-ink: #0e242f;
+    --color-mist: #f4f8f9;
+    --color-line: #e3ecee;
+    --color-soft: #e7f6f5;
+}
+
+@layer components {
+    .card {
+        @apply min-w-0 rounded-2xl border border-line bg-white p-4 shadow-sm sm:p-[22px];
+    }
+
+    .btn-primary {
+        @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-brand bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark;
+    }
+
+    .btn-outline {
+        @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-[#80c8c6] bg-white px-4 py-2 text-sm font-semibold text-brand transition-colors hover:bg-soft hover:text-brand-dark;
+    }
+
+    .btn-light {
+        @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-transparent bg-[#f1f4f5] px-3 py-2 text-sm font-semibold text-ink transition-colors hover:bg-[#e3e9eb];
+    }
+
+    .btn-sm {
+        @apply px-2.5 py-1.5 text-xs;
+    }
+
+    .field {
+        @apply w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-ink outline-none focus:border-brand focus:ring-2 focus:ring-brand/20;
+    }
+
+    .field-label {
+        @apply mb-1 block text-xs font-bold;
+    }
+
+    .data-table {
+        @apply w-full text-xs;
+    }
+
+    .data-table th {
+        @apply whitespace-nowrap border-b border-line px-3 py-3 text-left text-[10px] font-extrabold uppercase tracking-wide text-[#82929a];
+    }
+
+    .data-table td {
+        @apply border-b border-line px-3 py-3.5 align-middle;
+    }
+
+    .kicker {
+        @apply text-[10px] font-extrabold tracking-widest text-[#81929a];
+    }
+}
